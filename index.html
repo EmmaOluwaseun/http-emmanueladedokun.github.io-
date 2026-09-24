@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Emmanuel Adedokun — Customer Success, Customer Support and Recruitment Support professional portfolio.">
+<title>Emmanuel Adedokun | Customer Success & Recruitment Support</title>
+<style>
+:root{
+  --ink:#101828; --muted:#667085; --line:#e4e7ec; --bg:#f8fafc;
+  --card:#ffffff; --accent:#155eef; --accent2:#0b4bc4; --soft:#eff4ff;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;color:var(--ink);background:#fff;line-height:1.65}
+a{color:inherit;text-decoration:none}
+.container{width:min(1120px,92%);margin:auto}
+nav{position:sticky;top:0;z-index:20;background:rgba(255,255,255,.92);backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}
+.nav-inner{height:72px;display:flex;align-items:center;justify-content:space-between}
+.logo{font-weight:800;font-size:20px;letter-spacing:-.04em}
+.logo span{color:var(--accent)}
+.nav-links{display:flex;gap:28px;align-items:center;font-size:14px;font-weight:600;color:#475467}
+.nav-links a:hover{color:var(--accent)}
+.btn{display:inline-flex;align-items:center;justify-content:center;padding:12px 18px;border-radius:10px;font-weight:700;font-size:14px;border:1px solid transparent;transition:.2s}
+.btn-primary{background:var(--accent);color:#fff}.btn-primary:hover{background:var(--accent2)}
+.btn-light{background:#fff;border-color:var(--line)}.btn-light:hover{border-color:#b2ccff}
+.hero{padding:105px 0 85px;background:linear-gradient(180deg,#f7faff 0%,#fff 100%)}
+.hero-grid{display:grid;grid-template-columns:1.35fr .65fr;gap:70px;align-items:center}
+.kicker{display:inline-flex;background:var(--soft);color:var(--accent);font-size:13px;font-weight:800;padding:7px 11px;border-radius:999px;margin-bottom:20px}
+h1{font-size:clamp(44px,6vw,72px);line-height:1.02;letter-spacing:-.055em;max-width:800px}
+.hero h1 span{color:var(--accent)}
+.lead{font-size:19px;color:var(--muted);max-width:700px;margin:25px 0 30px}
+.actions{display:flex;gap:12px;flex-wrap:wrap}
+.hero-card{background:#fff;border:1px solid var(--line);border-radius:22px;padding:28px;box-shadow:0 18px 55px rgba(16,24,40,.08)}
+.hero-card .number{font-size:48px;font-weight:850;letter-spacing:-.06em;color:var(--accent)}
+.hero-card h3{font-size:18px;margin:4px 0 8px}.hero-card p{color:var(--muted);font-size:14px}
+.stat{padding:18px 0;border-top:1px solid var(--line);margin-top:20px}
+.stat strong{display:block;font-size:14px}.stat span{font-size:13px;color:var(--muted)}
+section{padding:92px 0}
+.section-head{max-width:720px;margin-bottom:42px}
+.eyebrow{text-transform:uppercase;letter-spacing:.12em;font-size:12px;color:var(--accent);font-weight:800;margin-bottom:10px}
+h2{font-size:clamp(32px,4vw,46px);line-height:1.1;letter-spacing:-.04em}
+.section-head p{color:var(--muted);margin-top:15px}
+.about{background:var(--bg)}
+.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:55px}
+.about p{color:#475467;margin-bottom:18px}
+.checks{display:grid;gap:14px}
+.check{display:flex;gap:12px;padding:16px;background:#fff;border:1px solid var(--line);border-radius:14px}
+.check b{font-size:14px}.check span{color:var(--muted);font-size:13px;display:block}
+.experience{display:grid;grid-template-columns:250px 1fr;gap:55px}
+.company{font-weight:800;font-size:20px}.role{color:var(--accent);font-weight:700;font-size:14px;margin-top:4px}.meta{color:var(--muted);font-size:13px;margin-top:8px}
+.experience-body h3{font-size:22px;margin-bottom:14px}
+.bullets{display:grid;gap:11px;padding-left:20px;color:#475467}
+.tags{display:flex;flex-wrap:wrap;gap:8px;margin-top:24px}.tag{padding:7px 11px;background:var(--soft);color:#175cd3;border-radius:999px;font-size:12px;font-weight:700}
+.skills{background:var(--bg)}
+.skill-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+.skill-card{background:#fff;border:1px solid var(--line);border-radius:16px;padding:22px}
+.skill-card h3{font-size:16px;margin-bottom:12px}.skill-card p{font-size:13px;color:var(--muted)}
+.projects{display:grid;grid-template-columns:repeat(2,1fr);gap:20px}
+.project{border:1px solid var(--line);border-radius:18px;padding:26px;background:#fff;transition:.2s}
+.project:hover{transform:translateY(-3px);box-shadow:0 12px 30px rgba(16,24,40,.07)}
+.project-number{font-size:12px;font-weight:800;color:var(--accent);margin-bottom:12px}
+.project h3{font-size:21px;margin-bottom:10px}.project p{color:var(--muted);font-size:14px}
+.project ul{margin:14px 0 0 18px;color:#475467;font-size:13px}
+.note{margin-top:28px;padding:16px 18px;border-left:3px solid var(--accent);background:var(--soft);font-size:13px;color:#475467}
+.framework{background:var(--ink);color:#fff}.framework .eyebrow{color:#84adff}.framework .section-head p{color:#98a2b3}
+.steps{display:grid;grid-template-columns:repeat(5,1fr);gap:12px}
+.step{padding:22px;border:1px solid #344054;border-radius:16px;background:#182230}.step b{font-size:12px;color:#84adff}.step h3{margin:10px 0 5px;font-size:17px}.step p{color:#98a2b3;font-size:13px}
+.contact{background:linear-gradient(135deg,#eff4ff,#f8fafc)}
+.contact-box{display:flex;justify-content:space-between;gap:30px;align-items:center;background:#fff;border:1px solid var(--line);border-radius:22px;padding:38px}
+.contact-box p{color:var(--muted);max-width:620px;margin-top:12px}
+footer{padding:30px 0;color:#667085;font-size:13px;border-top:1px solid var(--line)}
+.footer-inner{display:flex;justify-content:space-between;gap:20px}
+@media(max-width:850px){
+ .hero-grid,.about-grid,.experience{grid-template-columns:1fr}
+ .hero{padding-top:75px}.hero-card{max-width:500px}
+ .skill-grid{grid-template-columns:repeat(2,1fr)}
+ .steps{grid-template-columns:1fr 1fr}
+ .contact-box{display:block}.contact-box .actions{margin-top:22px}
+}
+@media(max-width:560px){
+ .nav-links{display:none}.nav-inner{height:62px}
+ section{padding:68px 0}.projects{grid-template-columns:1fr}
+ .skill-grid{grid-template-columns:1fr}.steps{grid-template-columns:1fr}
+ h1{font-size:46px}.lead{font-size:17px}
+ .footer-inner{display:block}.footer-inner div+div{margin-top:8px}
+}
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="container nav-inner">
+    <a class="logo" href="#top">Emmanuel<span>.</span></a>
+    <div class="nav-links">
+      <a href="#about">About</a>
+      <a href="#experience">Experience</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </div>
+    <a class="btn btn-primary" href="#contact">Let's connect</a>
+  </div>
+</nav>
+
+<main id="top">
+<section class="hero">
+  <div class="container hero-grid">
+    <div>
+      <div class="kicker">CUSTOMER SUCCESS • CUSTOMER SUPPORT • RECRUITMENT SUPPORT</div>
+      <h1>Helping people have <span>better experiences.</span></h1>
+      <p class="lead">Customer service professional with 2+ years of experience in high-volume contact-center and face-to-face environments, bringing strong communication, problem-solving, relationship management and follow-up skills to Customer Success and Recruitment Support.</p>
+      <div class="actions">
+        <a class="btn btn-primary" href="#projects">View my portfolio</a>
+        <a class="btn btn-light" href="#contact">Contact me</a>
+      </div>
+    </div>
+    <aside class="hero-card">
+      <div class="number">2+</div>
+      <h3>Years of customer-facing experience</h3>
+      <p>Supporting customers across contact-center and showroom environments within telecommunications.</p>
+      <div class="stat"><strong>Core focus</strong><span>Communication • Problem solving • Customer relationships</span></div>
+      <div class="stat"><strong>Location</strong><span>Nigeria • Open to remote opportunities</span></div>
+    </aside>
+  </div>
+</section>
+
+<section id="about" class="about">
+  <div class="container">
+    <div class="section-head">
+      <div class="eyebrow">About me</div>
+      <h2>People-first, process-minded and ready to grow.</h2>
+      <p>I enjoy working with people, solving problems, learning new systems and making sure every interaction ends with clarity and a positive experience.</p>
+    </div>
+    <div class="about-grid">
+      <div>
+        <p>I am a customer service professional with over two years of experience supporting customers in high-volume contact-center and face-to-face environments within the telecommunications industry.</p>
+        <p>My experience has developed my ability to understand customer needs, communicate clearly, handle difficult conversations, document interactions accurately, follow up consistently and work across multiple priorities.</p>
+        <p>I am now applying these transferable strengths to Customer Success and Recruitment Support, where communication, relationship management, organization and people skills are essential.</p>
+      </div>
+      <div class="checks">
+        <div class="check"><div>✓</div><div><b>Customer-first mindset</b><span>Focused on understanding needs and creating positive experiences.</span></div></div>
+        <div class="check"><div>✓</div><div><b>Clear communication</b><span>Comfortable communicating professionally across customer-facing channels.</span></div></div>
+        <div class="check"><div>✓</div><div><b>Reliable follow-up</b><span>Focused on closing the loop and keeping people informed.</span></div></div>
+        <div class="check"><div>✓</div><div><b>Adaptable learner</b><span>Ready to learn new recruitment systems, workflows and tools.</span></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="experience">
+  <div class="container">
+    <div class="section-head">
+      <div class="eyebrow">Experience</div>
+      <h2>Professional experience</h2>
+      <p>Real-world customer service experience that translates naturally into Customer Success and Recruitment Support.</p>
+    </div>
+    <div class="experience">
+      <div>
+        <div class="company">Airtel Nigeria</div>
+        <div class="role">Customer Service / Showroom Agent</div>
+        <div class="meta">Nigeria • Telecommunications</div>
+      </div>
+      <div class="experience-body">
+        <h3>Customer engagement, issue resolution & service support</h3>
+        <ul class="bullets">
+          <li>Assisted customers with enquiries, complaints, products, subscriptions and service-related concerns.</li>
+          <li>Engaged customers professionally and empathetically across high-volume interactions.</li>
+          <li>Identified customer needs and recommended appropriate products or services.</li>
+          <li>Supported sales and subscription activities.</li>
+          <li>Managed multiple customer interactions in a busy environment.</li>
+          <li>Followed up on customer concerns and provided updates where necessary.</li>
+          <li>Maintained customer information and service records through established processes.</li>
+          <li>Supported customer engagement and promotional activities.</li>
+        </ul>
+        <div class="tags">
+          <span class="tag">Customer Relations</span><span class="tag">Problem Solving</span><span class="tag">Sales</span><span class="tag">Follow-up</span><span class="tag">CRM Documentation</span><span class="tag">Conflict Resolution</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="skills" class="skills">
+  <div class="container">
+    <div class="section-head">
+      <div class="eyebrow">Capabilities</div>
+      <h2>Skills I bring to the team.</h2>
+    </div>
+    <div class="skill-grid">
+      <div class="skill-card"><h3>Customer Success</h3><p>Customer relationship management, onboarding, support, retention, complaint resolution, follow-up and needs identification.</p></div>
+      <div class="skill-card"><h3>Recruitment Support</h3><p>Candidate communication, follow-up, information management, screening support, interview coordination and pipeline organization.</p></div>
+      <div class="skill-card"><h3>Communication</h3><p>Professional email, telephone and WhatsApp Business communication, active listening and conflict management.</p></div>
+      <div class="skill-card"><h3>Administration</h3><p>Data entry, record keeping, CRM documentation, reporting, task prioritization and attention to detail.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="projects">
+  <div class="container">
+    <div class="section-head">
+      <div class="eyebrow">Portfolio demonstrations</div>
+      <h2>How I approach customer success & recruitment support.</h2>
+      <p>These sample projects demonstrate how I apply my transferable skills. They are portfolio demonstrations, not claims of client work.</p>
+    </div>
+    <div class="projects">
+      <article class="project"><div class="project-number">01 / CUSTOMER SUCCESS</div><h3>Customer Onboarding Journey</h3><p>A structured five-stage onboarding approach designed to create clarity from welcome through follow-up.</p><ul><li>Welcome & expectations</li><li>Understand customer needs</li><li>Guide setup</li><li>Confirm understanding</li><li>Follow up</li></ul></article>
+      <article class="project"><div class="project-number">02 / CUSTOMER SUCCESS</div><h3>Complaint Resolution Framework</h3><p>A practical approach for turning difficult customer interactions into structured resolution opportunities.</p><ul><li>Listen without assumptions</li><li>Clarify the issue</li><li>Investigate and resolve</li><li>Communicate next steps</li><li>Close the loop</li></ul></article>
+      <article class="project"><div class="project-number">03 / RECRUITMENT SUPPORT</div><h3>Candidate Screening Scorecard</h3><p>A simple framework for assessing candidates consistently against role requirements.</p><ul><li>Relevant experience</li><li>Communication</li><li>Customer orientation</li><li>Problem solving</li><li>Organization & motivation</li></ul></article>
+      <article class="project"><div class="project-number">04 / RECRUITMENT SUPPORT</div><h3>Candidate Follow-up Workflow</h3><p>A clear pipeline for keeping candidates informed and reducing missed follow-ups.</p><ul><li>Application review</li><li>Candidate contact</li><li>Screening</li><li>Interview reminders</li><li>Feedback & next-stage updates</li></ul></article>
+      <article class="project"><div class="project-number">05 / OPERATIONS</div><h3>Recruitment Pipeline Tracker</h3><p>A sample tracker designed to make candidate status, next actions and follow-ups easy to manage.</p><ul><li>Candidate stage</li><li>Interview status</li><li>Next action</li><li>Feedback tracking</li><li>Follow-up visibility</li></ul></article>
+      <article class="project"><div class="project-number">06 / COMMUNICATION</div><h3>Customer Success Communication</h3><p>A sample response framework built around empathy, clarity, ownership and follow-up.</p><ul><li>Acknowledge the concern</li><li>Show understanding</li><li>Explain next steps</li><li>Set expectations</li><li>Follow through</li></ul></article>
+    </div>
+    <div class="note"><strong>Transparency:</strong> The recruitment projects above are sample portfolio demonstrations created to show transferable skills. They do not represent recruitment work performed for a client.</div>
+  </div>
+</section>
+
+<section class="framework">
+  <div class="container">
+    <div class="section-head">
+      <div class="eyebrow">My approach</div>
+      <h2>Listen. Understand. Solve. Communicate. Follow up.</h2>
+      <p>A simple framework I use to think about people, problems and service quality.</p>
+    </div>
+    <div class="steps">
+      <div class="step"><b>01</b><h3>Listen</h3><p>Understand the person's actual concern.</p></div>
+      <div class="step"><b>02</b><h3>Identify</h3><p>Determine the need and the root of the issue.</p></div>
+      <div class="step"><b>03</b><h3>Solve</h3><p>Provide the right solution or escalate appropriately.</p></div>
+      <div class="step"><b>04</b><h3>Communicate</h3><p>Make the next steps clear and professional.</p></div>
+      <div class="step"><b>05</b><h3>Follow up</h3><p>Close the loop and confirm the outcome.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="contact" class="contact">
+  <div class="container">
+    <div class="contact-box">
+      <div>
+        <div class="eyebrow">Let's connect</div>
+        <h2>Looking for a customer-focused team member?</h2>
+        <p>I am open to remote opportunities in Customer Success, Customer Support, Recruitment Support and related operations roles.</p>
+      </div>
+      <div class="actions">
+        <a class="btn btn-primary" href="mailto:YOUR_EMAIL@example.com">Email me</a>
+        <a class="btn btn-light" href="https://www.linkedin.com/" target="_blank" rel="noopener">LinkedIn</a>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="container footer-inner">
+    <div>© 2026 Emmanuel Adedokun. All rights reserved.</div>
+    <div>Customer Success • Customer Support • Recruitment Support</div>
+  </div>
+</footer>
+</body>
+</html>
